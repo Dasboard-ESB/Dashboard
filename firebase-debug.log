@@ -1,0 +1,31 @@
+[debug] [2018-08-12T13:42:20.055Z] ----------------------------------------------------------------------
+[debug] [2018-08-12T13:42:20.057Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\blras\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-08-12T13:42:20.058Z] CLI Version:   4.0.1
+[debug] [2018-08-12T13:42:20.058Z] Platform:      win32
+[debug] [2018-08-12T13:42:20.058Z] Node Version:  v8.10.0
+[debug] [2018-08-12T13:42:20.059Z] Time:          Sun Aug 12 2018 14:42:20 GMT+0100 (GMT Summer Time)
+[debug] [2018-08-12T13:42:20.059Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-12T13:42:20.070Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-12T13:42:20.070Z] > authorizing via signed-in user
+[debug] [2018-08-12T13:42:20.073Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dashboardappajay  
+  
+ Sun Aug 12 2018 14:42:20 GMT+0100 (GMT Summer Time)
+[debug] [2018-08-12T13:42:23.204Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-12T13:42:23.205Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/dashboardappajay/tokens  
+  
+ Sun Aug 12 2018 14:42:23 GMT+0100 (GMT Summer Time)
+[debug] [2018-08-12T13:42:24.528Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'dashboardappajay'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-08-12T13:42:26.276Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/dashboardappajay/uploads/-LJiN56dPNkcIQBvBr1x?fileCount=251&message=  
+  
+ Sun Aug 12 2018 14:42:26 GMT+0100 (GMT Summer Time)
+[debug] [2018-08-12T13:44:24.029Z] Error: write ECONNRESET
+    at _errnoException (util.js:1022:11)
+    at WriteWrap.afterWrite [as oncomplete] (net.js:880:14)
+[error] 
+[error] Error: Server Error. write ECONNRESET
