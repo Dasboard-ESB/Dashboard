@@ -2,12 +2,12 @@ var app_firebase={};
 (function(){
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBQNK-OOceq1G65WXhmzOtuvQz_xikZQwM",
-    authDomain: "dashboardappajay.firebaseapp.com",
-    databaseURL: "https://dashboardappajay.firebaseio.com",
-    projectId: "dashboardappajay",
-    storageBucket: "dashboardappajay.appspot.com",
-    messagingSenderId: "337892091425"
+    apiKey: "AIzaSyD2i_o_PO09tPO6wLb5VT4a2xeWcLrG9Rc",
+    authDomain: "esb-dashboard.firebaseapp.com",
+    databaseURL: "https://esb-dashboard.firebaseio.com",
+    projectId: "esb-dashboard",
+    storageBucket: "esb-dashboard.appspot.com",
+    messagingSenderId: "158570298229"
   };
   firebase.initializeApp(config);
   app_firebase=firebase;
