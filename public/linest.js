@@ -1,7 +1,8 @@
 const dataSource = {
   "chart": {
-    "caption": "Execution Trend",
-    "yaxisname": "Test Cases",
+    "caption": "Average Progression Chart",
+    "yaxisname": "Amount of work done",
+    "subcaption": "2012-2016",
     "showhovereffect": "1",
     "numbersuffix": "",
     "drawcrossline": "1",
@@ -12,26 +13,26 @@ const dataSource = {
     {
       "category": [
         {
-          "label": "W1"
+          "label": "2012"
         },
         {
-          "label": "W2"
+          "label": "2013"
         },
         {
-          "label": "W3"
+          "label": "2014"
         },
         {
-          "label": "W4"
+          "label": "2015"
         },
         {
-          "label": "W5"
+          "label": "2016"
         }
       ]
     }
   ],
   "dataset": [
     {
-      "seriesname": "Planned",
+      "seriesname": "System Test",
       "data": [
         {
           "value": "62"
@@ -51,7 +52,7 @@ const dataSource = {
       ]
     },
     {
-      "seriesname": "Executed",
+      "seriesname": "System Integration Test",
       "data": [
         {
           "value": "16"
@@ -71,7 +72,7 @@ const dataSource = {
       ]
     },
     {
-      "seriesname": "Passed",
+      "seriesname": "User Acceptance Test",
       "data": [
         {
           "value": "20"
@@ -89,32 +90,12 @@ const dataSource = {
           "value": "29"
         }
       ]
-    },
-    {
-      "seriesname": "Failed",
-      "data": [
-        {
-          "value": "0"
-        },
-        {
-          "value": "12"
-        },
-        {
-          "value": "17"
-        },
-        {
-          "value": "12"
-        },
-        {
-          "value": "19"
-        }
-      ]
     }
   ]
 };
 
 FusionCharts.ready(function() {
-   var myChart1 = new FusionCharts({
+   var myChart = new FusionCharts({
       type: "msline",
       renderAt: "chart-container4",
       width: "100%",

@@ -22,9 +22,9 @@ function genFunction(company) {
     dataFormat: "json",
     dataSource: {
       chart: {
-        "caption": "Market Share of Web Servers",
+        "caption": "Current Status",
         "plottooltext":
-          "<b>$percentValue</b> of web servers run on $label servers",
+          "<b>$percentValue</b> Current progress",
         "showlegend": "1",
         "showpercentvalues": "1",
         "legendposition": "bottom",

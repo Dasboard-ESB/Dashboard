@@ -129,6 +129,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
         <!-- Page Content Holder -->
         <div id="content">
+
+
             <!-- top-bar -->
             <nav class="navbar navbar-default mb-xl-5 mb-4">
                 <div class="container-fluid">
@@ -195,77 +197,90 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </ul>
                 </div>
             </nav>
+
+
             <!--// top-bar -->
             <div class="container-fluid">
 
-                    <!-- Stats -->
-                    <div class="outer-w3-agile col-xl">
-                        <a href="irpmpa.html"><div class="stat-grid p-3 d-flex align-items-center justify-content-between bg-primary">
-                            <div class="s-l">
-                                <h5>IRP Market Process Automation</h5>
-                                <p class="paragraph-agileits-w3layouts text-white">Automation of Market Messages Received outside the IRP and Automation of the Withdrawal Process</p>
-                            </div>
-                            <div class="s-r">
-                                <h6>Test Planning
-                                    <i class="far fa-edit"></i>
-                                </h6>
-                            </div>
-                        </div></a>
-                        <a href="#l"><div class="stat-grid p-3 mt-3 d-flex align-items-center justify-content-between bg-success">
-                            <div class="s-l">
-                                <h5>Electricity Market Changes Phase 2</h5>
-                                <p class="paragraph-agileits-w3layouts">Introduction of EIRcodes into the Retail Market in Ireland</p>
-                            </div>
-                            <div class="s-r">
-                                <h6>System Test
-                                    <i class="far fa-smile"></i>
-                                </h6>
-                            </div>
-                        </div></a>
-                        <a href="#"><div class="stat-grid p-3 mt-3 d-flex align-items-center justify-content-between bg-danger">
-                            <div class="s-l">
-                                <h5>Gas Market Changes</h5>
-                                <p class="paragraph-agileits-w3layouts">A New Site work reason code to be added to S1601RQ</p>
-                            </div>
-                            <div class="s-r">
-                                <h6>Awaiting Go-Live
-                                    <i class="fas fa-tasks"></i>
-                                </h6>
-                            </div>
-                        </div></a>
-                        <a href="#"><div class="stat-grid p-3 mt-3 d-flex align-items-center justify-content-between bg-warning">
-                            <div class="s-l">
-                                <h5>Small Changes Q1 - 2019</h5>
-                                <p class="paragraph-agileits-w3layouts">Implementation of 32 Work Request in the first Qtr of 2019</p>
-                            </div>
-                            <div class="s-r">
-                                <h6>Test Planning
-                                    <i class="fas fa-users"></i>
-                                </h6>
-                            </div>
-                        </div></a>
-                    </div>
+                <div class="outer-w3-agile mt-3">
+                  <h4 class="tittle-w3-agileits mb-4">System Test Preperation</h4>
+                  <!-- donutchart.js -->
+                  <div id="stchart" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="outer-w3-agile mt-3">
+                  <h4 class="tittle-w3-agileits mb-4">System Integration Test Preperation</h4>
+                  <!-- donutchart.js -->
+                  <div id="sitchart" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="outer-w3-agile mt-3">
+                  <h4 class="tittle-w3-agileits mb-4">User Acceptance Test Preperation</h4>
+                  <!-- donutchart.js -->
+                  <div id="uatchart" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="outer-w3-agile mt-3">
+                  <h4 class="tittle-w3-agileits mb-4">System Test </h4>
+                  <!-- donutchart.js -->
+                  <div id="stfull" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="outer-w3-agile mt-3">
+                  <h4 class="tittle-w3-agileits mb-4">System Integration Test </h4>
+                  <!-- donutchart.js -->
+                  <div id="sitfull" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="outer-w3-agile mt-3">
+                  <h4 class="tittle-w3-agileits mb-4">User Acceptance Test </h4>
+                  <!-- donutchart.js -->
+                  <div id="uatfull" style="width: 100%; height: 100%;"></div>
+                </div>
+                <!-- <div id="columnchart_material" style="width: 800px; height: 500px;"></div> -->
 
-
+              <!-- <div class="outer-w3-agile mt-3">
+                <h4 class="tittle-w3-agileits mb-4">System Test Percentage</h4>
+                  <div id="barchartpercent"style="height: 300px; width: 100%;"></div>
+              </div> -->
+              <div class="outer-w3-agile mt-3">
+                  <div id="stbar"style="height: 300px; width: 100%;"></div>
+              </div>
+              <div class="outer-w3-agile mt-3">
+                  <div id="chart-container4" style="height: 300px; width: 100%;"></div>
+              </div>
+              <div class="outer-w3-agile mt-3">
+                  <div id="barchart" style="height: 300px; width: 100%;"></div>
+              </div>
+              <div class="outer-w3-agile mt-3">
+                  <div id="defects" style="height: 300px; width: 100%;"></div>
+              </div>
             </div>
 
 
             <div class="copyright-w3layouts py-xl-3 py-2 mt-xl-5 mt-4 text-center">
-                <p>© Test Dashboard </p>
+                <p>Test Dashboard </p>
             </div>
             <!--// Copyright -->
         </div>
     </div>
 
     <script src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
     <!--Firebase Login script -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <script src="firebase.js"></script>
     <script src="index.js"></script>
     <script src="main.js"></script>
     <script src="piechart.js"></script>
-    <script src="donutchart.js"></script>
-    <script src="barchart.js"></script>
+    <script src="irpmpa/donutst.js"></script>
+    <script src="irpmpa/donutsit.js"></script>
+    <script src="irpmpa/donutuat.js"></script>
+    <script src="irpmpa/barchartst.js"></script>
+    <script src="irpmpa/defectstatus.js"></script>
+    <script src="irpmpa/linest.js"></script>
+    <script src="irpmpa/donutfull.js"></script>
+    <script src="irpmpa/stfull.js"></script>
+    <script src="irpmpa/sitfull.js"></script>
     <script src="linechart.js"></script>
+    <script src="irpmpa/coloredchart.js"></script>
     <script src="gantt.js"></script>
     <!-- Required common Js -->
     <script src='js/jquery-2.2.3.min.js'></script>
@@ -273,6 +288,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     <!-- loading-gif Js -->
     <script src="js/modernizr.js"></script>
+
     <script>
         //paste this code under head tag or in a seperate js file.
         // Wait for window load
@@ -280,6 +296,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             // Animate loader off screen
             $(".se-pre-con").fadeOut("slow");;
         });
+    </script>
+    <script type="text/javascript">
+
+
     </script>
     <!--// loading-gif Js -->
 
@@ -295,126 +315,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     <!-- Graph -->
     <script src="js/SimpleChart.js"></script>
-    <!-- <script>
-    // var rootref= firebase.database().ref().child("Values");
-    // rootref.on("child_added",snap=>{
-    //   var num=snap.child("Number");
-    //   var value=snap.child("val");
-    // });
-        var graphdata4 = {
-            linecolor: "Random",
-            title: "Thursday",
-            values: [{
-                    X: "6",
-                    Y: 300.00
-                },
-                {
-                    X: "7",
-                    Y: 101.98
-                },
-                {
-                    X: "8",
-                    Y: 140.00
-                },
-                {
-                    X: "9",
-                    Y: 340.00
-                },
-                {
-                    X: "10",
-                    Y: 470.25
-                },
-                {
-                    X: "11",
-                    Y: 180.56
-                },
-                {
-                    X: "12",
-                    Y: 680.57
-                },
-                {
-                    X: "13",
-                    Y: 740.00
-                },
-                {
-                    X: "14",
-                    Y: 800.89
-                },
-                {
-                    X: "15",
-                    Y: 420.57
-                },
-                {
-                    X: "16",
-                    Y: 980.24
-                },
-                {
-                    X: "17",
-                    Y: 1080.00
-                },
-                {
-                    X: "18",
-                    Y: 140.24
-                },
-                {
-                    X: "19",
-                    Y: 140.58
-                },
-                {
-                    X: "20",
-                    Y: 110.54
-                },
-                {
-                    X: "21",
-                    Y: 480.00
-                },
-                {
-                    X: "22",
-                    Y: 580.00
-                },
-                {
-                    X: "23",
-                    Y: 340.89
-                },
-                {
-                    X: "0",
-                    Y: 100.26
-                },
-                {
-                    X: "1",
-                    Y: 1480.89
-                },
-                {
-                    X: "2",
-                    Y: 1380.87
-                },
-                {
-                    X: "3",
-                    Y: 1640.00
-                },
-                {
-                    X: "4",
-                    Y: 1700.00
-                }
-            ]
-        };
-        $(function () {
-            $("#Hybridgraph").SimpleChart({
-                ChartType: "Hybrid",
-                toolwidth: "50",
-                toolheight: "25",
-                axiscolor: "#E6E6E6",
-                textcolor: "#6E6E6E",
-                showlegends: false,
-                data: [graphdata4],
-                legendsize: "140",
-                legendposition: 'bottom',
-                xaxislabel: 'Hours',
-                title: 'Weekly Profit',
-                yaxislabel: 'Profit in $'
-            });
-        });
-    </script> -->
+    <script>
+
+
+    </script>
 
 
         <script src="chart.js"></script>
@@ -427,30 +331,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- Calender -->
     <script src="js/moment.min.js"></script>
     <script src="js/pignose.calender.js"></script>
-    <script>
-        //<![CDATA[
-        $(function () {
-            $('.calender').pignoseCalender({
-                select: function (date, obj) {
-                    obj.calender.parent().next().show().text('You selected ' +
-                        (date[0] === null ? 'null' : date[0].format('YYYY-MM-DD')) +
-                        '.');
-                }
-            });
 
-            $('.multi-select-calender').pignoseCalender({
-                multiple: true,
-                select: function (date, obj) {
-                    obj.calender.parent().next().show().text('You selected ' +
-                        (date[0] === null ? 'null' : date[0].format('YYYY-MM-DD')) +
-                        '~' +
-                        (date[1] === null ? 'null' : date[1].format('YYYY-MM-DD')) +
-                        '.');
-                }
-            });
-        });
-        //]]>
-    </script>
     <!--// Calender -->
 
     <!-- profile-widget-dropdown js-->
@@ -468,84 +349,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             day: 25
         });
     </script>
-    <!--// Count-down -->
-
-    <!-- pie-chart -->
-    <!-- <script src='js/amcharts.js'></script>
-    <script>
-    var cdata = [];
-    var x=1]
-    window.addEventListener("load", getData(genFunction));
-        function getData(callbackIN) {
-          var ref = firebase.database().ref("data");
-          ref.once('value').then(function (snapshot) {
-            callbackIN(snapshot.val())
-          });
-        }
-
-        function genFunction(data) {
-
-          var len = data.length;
-          for(var i=1; i<len; i++) {
-            cdata.push({
-              country: data[i]['label'],
-              value: data[i]['value']
-            });
-
-          }
-}
-
-
-        var chart;
-        var legend;
-        var chartData = [{
-                country: "Lithuania",
-                value: 260
-            },
-            {
-                country: "Ireland",
-                value: 201
-            },
-            {
-                country: "Germany",
-                value: 65
-            },
-            {
-                country: "Australia",
-                value: 39
-            },
-            {
-                country: "UK",
-                value: 19
-            },
-            {
-                country: "Latvia",
-                value: 10
-            }
-        ];
-        console.log(cdata);
-        AmCharts.ready(function () {
-
-            // PIE CHART
-            chart = new AmCharts.AmPieChart();
-            chart.dataProvider = chartData;
-            chart.titleField = "country";
-            chart.valueField = "value";
-            chart.outlineColor = "";
-            chart.outlineAlpha = 0.8;
-            chart.outlineThickness = 2;
-            // this makes the chart 3D
-            chart.depth3D = 20;
-            chart.angle = 30;
-
-            // WRITE
-            chart.write("chartdiv");
-        });
-
-    </script> -->
-    <!--// pie-chart -->
-
-    <!-- dropdown nav -->
     <script>
         $(document).ready(function () {
             $(".dropdown").hover(
